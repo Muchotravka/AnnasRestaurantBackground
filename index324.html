@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annas Reataurant</title>
+   <style>
+    body {background-image: linear-gradient(45deg, rgb(233, 226, 124), rgb(224, 149, 36), grey,  black );}
+        
+    header { background-color: rgb(177, 174, 174);
+            color: rgb(10, 5, 5);
+            min-height: 20%; 
+            display: block;   
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.2em;
+        }
+        a { color: black;
+            text-decoration: none;   
+        }
+        a:link { color:rgb(139, 8, 129)}
+        a:visited {color: rgb(19, 63, 19);}
+        a:hover { cursor: pointer;}
+
+        table {
+            box-sizing: border-box;
+            width:100%;
+            border-collapse: collapse;
+        }
+        td, tr {
+            padding-top: 3px;
+            padding-bottom: 3px;
+            border: solid whitesmoke;
+        }
+
+        section {
+            margin-right: 2%;
+            min-height: 70%;
+            max-width: fit-content;
+            background: rgb(42, 104, 39);
+            color: aliceblue;
+            padding-left: 3%;
+            padding-right: 3%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: block;
+            float: right;
+        }
+
+        article {
+
+            display: block;
+            float: left;
+            width: 50%;
+            margin-left: 4%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .foot {
+            background-color: rgb(182, 184, 180);
+            border: 2px solid black;
+            color: bisque;
+            display: inline-block;
+            box-sizing: border-box;
+            width: 100%;
+            font-size: 1.2em;
+            height: fit-content;
+
+        }
+        footer { text-align: center;}
+        #prva { 
+            margin-left: 20%;
+        }
+        #druha {margin-left: 20%;}
+        #tretia { margin-left: 20%;}
+       
+   </style>
+     
+
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td>Anna`s Restaurant</td>
+                <td>Contact</td>
+                <td>Reviews</td>
+            </tr>
+            <tr>
+                <td><a href="Menu.html">MENU</a></td>
+                <td><a href="Menu.html">Today`s special</a></td>               
+                <td><a href="Menu.html">Drinks</a></td>
+            </tr>
+        </table>
+    </header>
+  <article>
+    <h3>Co sme navarili to zjete a nebudete lutovat.</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatibus eveniet officia. Quisquam dolorem magnam tenetur tempora quos voluptate quia eveniet sint, quasi unde est, magni ut.<br> Temporibus, nesciunt praesentium!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum recusandae ut pariatur. Nisi provident dolores deserunt,<br> aperiam aut dolor nam voluptatum libero possimus atque odit natus itaque est unde hic.
+    </p>
+  </article> 
+    <section>
+        <h3>Order</h3>
+        <form>
+            <input type="radio" id="dovoz" name="homedelivery" value="delivery">
+            <label for="dovoz">I prefer delivery.</label><br><br>
+            <label for="fname">Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="myaddress"><br>
+            <label for="meals">Meal order:</label><br>
+            <input type="text" id="meals" name="toeat"><br>
+            <label for="drinks">Drinks:</label><br>
+            <input type="text" id="drinks" name="todrink"><br><br>
+            <input type="radio" id="restaurant" name="eatingOUT" value="out">
+            <label for="restaurant">I would like to make a reservation and eat in Annas cozy restaurant</label><br><br>
+            <label for="date">Date:</label><br>
+            <input type="text" id="date" name="date"><br>
+            <label for="time">Time:</label><br>
+            <input type="text" id="time" name="time"><br><br>
+            <input type="radio" id="event" name="organizinEvent" value="morepeople">
+            <label for="event">I would like to organize an event for group of people.</label><br><br>
+            <label for="eventdate">Date of the planned event:</label><br>
+            <input type="text" id="eventdate" name="eventdate"><br>
+            <label for="eventtime">Starting time:</label><br>
+            <input type="text" id="eventtime" name="time"><br><br>
+            <label for="timelenght">For how long would you like to reserve the tables</label><br>
+            <input type="text" id="timelenght" name="dauer"><br><br><br>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value="James Bond"><br>
+            <label for="contact">Phone number or email:</label><br>
+            <input type="text" id="contact" name="contact" value=""><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset"><br><br>
+          </form>
+    </section>
+        <nav class="foot">
+                <a href="Menu.html"> Special Events</a>
+                <a id="prva" href="Menu.html">Custom Orders</a> 
+                <a id="druha" href="mailto:anna.armagnac@gmail.com">Share any idea with us</a>
+                <a id="tretia" href="">Blog</a> 
+        </nav>
+    <footer>
+        <p>Copyright 2022</p>
+    </footer>
+</body>
+</html>
